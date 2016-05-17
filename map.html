@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Colorado Beer Me</h1>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Search</button>
+            <div class="dropdown-content">
+              <a href="#">Syle Search</a>
+              <a href="#">Local Breweries</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+      </nav>
+    </header>
+    <a href="map.html">map</a>
+    <main>
+
+      <form id='form' action="http://api.brewerydb.com/v2/breweries/?key=2cc4dab6b173f42ef6bcb4822067e001" method="post">
+
+          <label for='mapinfo'>map</label>
+          <select id='mapinfo' name="mapinfo">
+            <option disabled selected>Select your option</option>
+          </select>
+
+
+
+          <input class='save' type='submit' value='Save'>
+
+        </form>
+    </main>
+    <div class="formOut">
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

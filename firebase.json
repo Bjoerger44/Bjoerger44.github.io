@@ -1,0 +1,9 @@
+{
+  "firebase": "beer-me-colorado",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
