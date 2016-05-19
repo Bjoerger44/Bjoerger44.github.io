@@ -8,27 +8,13 @@ body {
  nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 main {
   display: flex;
   justify-content: center;
   align-items: center;
 
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  height: 200px;
-  width: 600px;
-  border: 1px solid grey;
-
-}
-.script {
-  font-size: 70px;
-  font-family: 'Montserrat', sans-serif;
 }
 .dropbtn {
     background-color: black;
@@ -75,3 +61,9 @@ main {
 .dropdown:hover .dropbtn {
     background-color: grey;
 }
+
+#map {
+        width: 500px;
+        height: 400px;
+        background-color: #CCC;
+      }

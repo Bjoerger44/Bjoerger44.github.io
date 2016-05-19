@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="beer.css">
 
     <title></title>
   </head>
@@ -28,17 +28,22 @@
       </nav>
     </header>
     <main>
-      <div id="map"></div>
 
+      <form id='form' action="http://api.brewerydb.com/v2/styles/?key=2cc4dab6b173f42ef6bcb4822067e001" method="post">
 
+          <label for='beerName'>Beer Style</label>
+          <select id='beerName' name="beerName">
+            <option disabled selected>Select your option</option>
+          </select>
+        </form>
     </main>
+    <div class="formOut">
+      </div>
 
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVIMMgIFKOPFz5I4Fc-tIcOnBqgD1xNCA&callback=initMap"
-        async defer></script>
+    <script type="text/javascript" src="beer.js"></script>
   </body>
 </html>

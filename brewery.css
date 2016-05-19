@@ -8,27 +8,11 @@ body {
  nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  height: 200px;
-  width: 600px;
-  border: 1px solid grey;
-
-}
-.script {
-  font-size: 70px;
-  font-family: 'Montserrat', sans-serif;
 }
 .dropbtn {
     background-color: black;
@@ -74,4 +58,19 @@ main {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: grey;
+}
+
+#brewImage img{
+  width: 250px;
+  height: 250px;
+  border: 1px solid blue;
+}
+#brewDescription{
+  color: white;
+  background-color: black;
+  border: 1px solid grey;
+}
+
+#brewWebsite{
+  color: white;
 }
