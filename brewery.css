@@ -1,9 +1,16 @@
-body {
+
+  body {
+
   background: url('quarter1pic.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+
 }
  nav {
 
@@ -14,11 +21,30 @@ body {
 h1 {
     color: #c0ccc5
 }
+
 main {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;;
+  flex: 1;
+  height: 100%;
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  height: 50px;
+  width: 100%;
+}
+.icon {
+  align-self: center;
+}
+
 label {
   color: #c0ccc5
+
+
 
 }
 form {

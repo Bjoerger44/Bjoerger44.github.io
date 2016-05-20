@@ -1,12 +1,13 @@
-* {
-  border: 1px solid red;
-}
+
 body {
   background: url('quarter1pic.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
  nav {
   display: flex;
@@ -20,12 +21,13 @@ main {
   display: flex;
   flex: 1;
   justify-content: center;
-  
+  align-items: flex-start;
+
 }
 .footer {
   display: flex;
   justify-content: center;
-  align-self: flex-end;
+
   background-color: black;
   height: 50px;
   width: 100%;
