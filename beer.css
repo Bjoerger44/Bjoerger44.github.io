@@ -1,18 +1,51 @@
 body {
-  background-image: url('quarter1pic.jpg');
+  background: url('quarter1pic.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
 }
  nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+label {
+  align-self: flex-start;
+  color: #c0ccc5;
+}
+h1 {
+  color: #c0ccc5;
+}
+select {
+  width: 250px;
+}
 main {
   display: flex;
-
+  flex: 1;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 50px;
+  width: 100%;
+}
+.icon {
+  align-self: center;
+}
+.formOut {
+  display: none;
+  align-self: center;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  width: 33%;
+  border: 1px solid #c0ccc5;
 }
 .dropbtn {
     background-color: black;
@@ -21,6 +54,7 @@ main {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border: 1px solid #c0ccc5;
 }
 
 /* The container <div> - needed to position the dropdown content */

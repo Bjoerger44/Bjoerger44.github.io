@@ -17,6 +17,7 @@ $(document).ready(function() {
       // console.log("here")
       // console.log(beerData[0])
       // console.log($('#beerName').val())
+      $("#brewDescription").show();
       for (var i = 0; i < breweryData.length; i++) {
         dataName = breweryData[i].name;
     if (formName === dataName) {

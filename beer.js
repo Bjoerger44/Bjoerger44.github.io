@@ -26,10 +26,11 @@ $(document).ready(function() {
     console.log("here")
     console.log(beerData[0])
     console.log($('#beerName').val())
+    $('.formOut').show()
     for (var i = 0; i < beerData.length; i++) {
       dataName = beerData[i].name;
   if (formName === dataName) {
-      $(".formOut").text("<p>" +beerData[i]["description"]+ "</p>")
+      $(".formOut").html("<p>"+beerData[i]["description"]+"</p>")
       }
     }
   })

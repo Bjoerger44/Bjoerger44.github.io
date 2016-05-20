@@ -1,18 +1,55 @@
 body {
-  background-image: url('quarter1pic.jpg');
+  background: url('quarter1pic.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
  nav {
+
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around
+}
+h1 {
+    color: #c0ccc5
 }
 main {
   display: flex;
+}
+label {
+  color: #c0ccc5
 
+}
+form {
+  align-self: flex-start;
+}
+select {
+  width: 250px;
+}
+#infobox{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  margin-left: 80px;
+}
+#brewImage img{
+  width: 250px;
+  height: 250px;
+  border: 1px solid #c0ccc5;
+}
+#brewDescription{
+  display: none;
+  color: white;
+  background-color: black;
+  border: 1px solid #c0ccc5;
+  width: 250px;
+  padding: 10px;
+}
+
+#brewWebsite{
+  color: white;
+  text-align: center;
 }
 .dropbtn {
     background-color: black;
@@ -21,6 +58,7 @@ main {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border: 1px solid #c0ccc5;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -58,19 +96,4 @@ main {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: grey;
-}
-
-#brewImage img{
-  width: 250px;
-  height: 250px;
-  border: 1px solid blue;
-}
-#brewDescription{
-  color: white;
-  background-color: black;
-  border: 1px solid grey;
-}
-
-#brewWebsite{
-  color: white;
 }

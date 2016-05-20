@@ -1,9 +1,14 @@
+
 body {
-  background-image: url('quarter1pic.jpg');
+  background: url('quarter1pic.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
 }
  nav {
   display: flex;
@@ -12,8 +17,9 @@ body {
 }
 main {
   display: flex;
+  flex: 1;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
 }
 .logo {
@@ -24,11 +30,26 @@ main {
   height: 200px;
   width: 600px;
   border: 1px solid grey;
+  opacity: 1.0;
 
 }
 .script {
   font-size: 70px;
   font-family: 'Montserrat', sans-serif;
+  color: #c0ccc5;
+}
+.slogan {
+  font-size: 12px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 50px;
+  width: 100%;
+}
+.icon {
+  align-self: center;
 }
 .dropbtn {
     background-color: black;
